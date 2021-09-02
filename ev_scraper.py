@@ -47,11 +47,11 @@ for names in car_list:
     car_eff.append(efficiency)
     fast_charge = names.find_element_by_xpath('.//div[@class="specs"]/p[5]/span[2]').text.split(' ')[0]
     car_charge.append(fast_charge)
-    price_gbp = names.find_element_by_xpath('.//div[@class="pricing align-right"]/span[3]').text[1:]
+    price_gbp = names.find_element_by_xpath('.//div[@class="pricing align-right"]/span[3]').text
     price_p.append(price_gbp)
-    price_germany = names.find_element_by_xpath('.//div[@class="pricing align-right"]/span[1]').text[1:]
+    price_germany = names.find_element_by_xpath('.//div[@class="pricing align-right"]/span[1]').text
     price_g.append(price_germany)
-    price_netherland = names.find_element_by_xpath('.//div[@class="pricing align-right"]/span[2]').text[1:]
+    price_netherland = names.find_element_by_xpath('.//div[@class="pricing align-right"]/span[2]').text
     price_n.append(price_netherland)
 
 # saving the data into a dictionary and then turning it into a csv file
